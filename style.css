@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+body {
+    background-color: hsl(185, 41%, 84%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Space Mono";
+}
+main {
+    margin-bottom: auto;
+    margin-top: 100px;
+}
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.wrapper {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.left-wrapper {
+    width: 50%;
+    padding: 0 20px;
+}
+
+input {
+    width: 100%;
+    text-align: right;
+    padding: 0 5px;
+    color: hsl(183, 100%, 15%);
+    /* font-weight: 800; */
+    font-size: 24px;
+    background-color: hsl(189, 41%, 97%);
+    border: 2px solid hsl(189, 41%, 97%);
+    border-radius: 5px;
+    caret-color: hsl(183, 100%, 15%);
+}
+
+input:hover {
+    border: 2px solid hsl(173, 56%, 80%);
+}
+
+label {
+    color: hsl(183, 100%, 15%);
+}
+
+.input {
+    position: relative;
+    margin-top: 5px;
+}
+
+.bill {
+    margin-bottom: 20px;
+}
+
+.input img {
+    position: absolute;
+
+    left: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.btn {
+    flex: 1;
+    background-color: hsl(183, 100%, 15%);
+    border: none;
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+    padding: 7px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: hsl(173, 56%, 80%);
+    color: hsl(183, 100%, 15%);
+}
+
+.clicked {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+.custom {
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+    font-size: 24px;
+    flex: 1;
+
+    font-size: 18px;
+    padding: 7px 0;
+    border-radius: 5px;
+}
+
+.custom::placeholder {
+    text-align: center;
+}
+.btn-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-box-top {
+    margin-top: 10px;
+}
+
+.btn-box-bottom {
+    margin-bottom: 20px;
+}
+
+.right-wrapper {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 12px;
+}
+
+.tip-person {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    align-items: center;
+}
+.total-tip {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.amount h3 {
+    font-size: 40px;
+    color: hsl(172, 67%, 45%);
+}
+
+.person p {
+    color: hsl(189, 41%, 97%);
+}
+
+.person span {
+    color: hsl(184, 14%, 56%);
+}
+
+.reset {
+    margin-top: auto;
+}
+.reset-btn {
+    width: 100%;
+    border: none;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 7px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reset-btn:hover {
+    background-color: hsl(173, 56%, 80%);
+    color: hsl(183, 100%, 15%);
+}
+
+.error{
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+
+
+.error-text {
+    display: initial;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media(max-width:900px){
+ .wrapper {
+    width: 100%;
+ }
+ main{
+    margin-top: 50px;
+ }
+}
+
+@media(max-width: 426px){
+   
+    main{
+        margin-top: 40px;
+    }
+    .wrapper{
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    .right-wrapper{
+        width: 100%;
+    }
+    .left-wrapper {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
